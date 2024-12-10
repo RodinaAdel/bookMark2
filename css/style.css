@@ -1,0 +1,80 @@
+.body{
+    height: 100vh;
+background-color:antiquewhite;
+}
+h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.title i,h2{
+    background-color: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+.bookContent{
+    margin: 0 auto;
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+    
+
+}
+.header{
+    font-family: "Pacifico", cursive;
+}
+.header::selection{
+    background-color: #fec260;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 15px;
+    bottom: 0%;
+    left: 42%;
+    z-index: -22;
+    background-color: #fec260;
+    transition: height .5s;
+}
+.header:hover::before{
+    height: 40px;
+}
+.title h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color:transparent ;
+}
+.title i{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-text-fill-color:transparent ;
+}
+button{
+    background-color: tomato;
+}
+ .rodina a{
+background-color:  #9eb23b;
+border: none;
+text-decoration: none;
+border-radius: 5px;
+padding: 10px 15px 0 15px;
+cursor: pointer;
+transition: all 0.5s;
+color: white;
+}
+ .rodina a:hover{
+    background-color: white;
+    color: black;
+}
+ .button2{
+background-color:  #eb1d36;
+color: white;
+border: none;
+border-radius: 5px;
+padding: 10px 10px 0 10px;
+cursor: pointer;
+transition: all 0.5s;
+}
+ .button2:hover{
+    background-color: white;
+    color: black;
+}

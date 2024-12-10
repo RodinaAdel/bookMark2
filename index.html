@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    
+<body class="body">
+    <h1 class="header my-5 text-center position-relative">Bookmarker</h1>
+
+    <div class="bookContent d-flex justify-content-center align-items-center gap-4 flex-column p-3 w-75">
+
+    <div class="title mt-3">
+    <i class="fa-solid fa-bookmark d-inline-block me-2 fs-3"></i>
+     <h2 class="text-center d-inline-block fs-3">Bookmark your favorite sites</h2>
+    <i class="fa-solid fa-bookmark d-inline-block ms-2 fs-3"></i>
+</div>
+
+
+<div class="link d-flex justify-content-center align-items-center flex-column w-100">
+        <label for="bName" id="bName" class=" mb-1 fw-bold fs-6 d-inline-block"> 
+        <i class="fa-solid fa-book-bookmark me-2"></i>
+        Site Name
+</label>
+<input oninput="validation('bookMarkName')" type="text" id="bookMarkName" name="bookMarkName" placeholder="Bookmark Name" class=" form-control px-3 fw-medium fs-6 w-100">    
+</div>
+
+<div class="link mt-3 d-flex justify-content-center align-items-center flex-column w-100">
+    <label for="bUrl" id="bUrl" class=" mb-1 fw-bold fs-6 d-inline-block"> 
+        <i class="fa-solid fa-link me-2 d-inline-block"></i>
+        Site URL
+</label>
+<input oninput="validation('bookMarkUrl')" type="text" id="bookMarkUrl" name="bookMarkUrl" placeholder="Website URL" class="form-control px-3 fw-medium fs-6 w-100">
+</div>
+
+<button onclick="addBookMark()" id="SubmitBtn" class="border border-0 rounded-1 py-2 px-5 mt-3 mb-3 text-white">Submit</button>
+</div>
+    
+
+<div class="container">
+    <div class="row text-center fw-bold fs-6 bg-white mt-3 py-2 ">
+        <div class="col-md-3 col-lg-3" id="data-index">
+            Index
+        </div>
+        <div class="col-md-3 col-lg-3">
+            Website Name
+        </div>
+        <div class="col-md-3 col-lg-3">
+          Visit
+        </div>
+        <div class="col-md-3 col-lg-3">
+          Delete
+        </div>
+        
+    </div>
+</div>
+
+
+    <div class="container" id="tableContent">
+    <div class="row text-center fw-bold fs-6 bg-white py-2" id="rowData">
+        <div class="col-md-3 col-lg-3">
+            
+        </div>
+        <div class="col-md-3 col-lg-3">
+
+        </div>
+        <div class="rodina col-md-3 col-lg-3">
+            <!-- <a class="button1 my-2 p-3">
+                <i class="fa-regular fa-eye d-inline-block"></i>
+                <p class="d-inline-block">Visit</p>
+            </a> -->
+        </div>
+        <div class="col-md-3 col-lg-3">
+            <!-- <button class="button2 my-2">
+                <i class="fa-solid fa-trash d-inline-block"></i>
+                <p class="d-inline-block">Delete</p>
+            </button> -->
+        </div>
+    </div>
+
+    </div>
+
+
+  
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
